@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[89]:
-
-
 import collections
 
 with open('verni_im_dengi_pidor.txt', 'r') as f:
@@ -15,4 +9,3 @@ word_freq = collections.Counter(word for word in text.split() if word not in exc
 
 for word, freq in word_freq.most_common(25):
     print(f"{word}: {freq}")
-
